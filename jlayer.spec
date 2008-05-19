@@ -1,7 +1,7 @@
 Name:          jlayer
 Summary:       Ogg Vorbis sound engine
 Version:       1.0
-Release:       %mkrel 1
+Release:       %mkrel 2
 License:       LGPL
 Group:	       Sound
 Source0:       %name%version.tar.gz
@@ -21,6 +21,7 @@ in real-time. JLayer supports MPEG 1/2/2.5 Layer 1/2/3 audio format.
 %{_javadir}/%name-%version.jar
 %{_javadir}/%name.jar
 %{_javadir}/jl%{version}.jar
+%{_javadir}/jl.jar
 
 #--------------------------------------------------------------------
 
@@ -47,11 +48,12 @@ rm -fr %buildroot
 
 %install
 install -dm 755 %buildroot%{_javadir}
-cp -f jl%{version}.jar %buildroot%{_javadir}/
+install -m644 jl%{version}.jar %buildroot%{_javadir}/
+ln -s jl%{version}.jar %{buildroot}%{_javadir}/jl.jar
 
 # jars
-install -m644 jl%{version}.jar -D %{buildroot}%{_javadir}/%{name}-%{version}.jar
-ln -s %{name}-%{version}.jar %{buildroot}%{_javadir}/%{name}.jar
+ln -s jl%{version}.jar %{buildroot}%{_javadir}/%{name}-%{version}.jar
+ln -s jl%{version}.jar %{buildroot}%{_javadir}/%{name}.jar
 
 # javadoc
 install -d %{buildroot}%{_javadocdir}/%{name}-%{version}
