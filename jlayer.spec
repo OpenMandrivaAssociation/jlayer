@@ -10,6 +10,7 @@ BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: ant
+BuildRequires: java-rpmbuild
 BuildRequires: java-devel-gcj
 
 %description
