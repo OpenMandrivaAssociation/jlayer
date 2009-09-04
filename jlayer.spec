@@ -1,7 +1,7 @@
 Name:          jlayer
 Summary:       Ogg Vorbis sound engine
 Version:       1.0
-Release:       %mkrel 3
+Release:       %mkrel 4
 License:       LGPL
 Group:	       Sound
 Source0:       %name%version.tar.gz
