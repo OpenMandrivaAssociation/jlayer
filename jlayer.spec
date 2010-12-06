@@ -1,7 +1,7 @@
 Name:		jlayer
 Summary:	Ogg Vorbis sound engine
 Version:	1.0.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	LGPLv2+
 Group:		Development/Java
 URL:		http://sourceforge.net/projects/javalayer/
