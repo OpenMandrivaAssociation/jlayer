@@ -60,3 +60,31 @@ ln -s %{name}-%{version} %{buildroot}%{_javadocdir}/%{name}
 
 %clean
 rm -fr %{buildroot}
+
+
+%changelog
+* Mon Dec 06 2010 Oden Eriksson <oeriksson@mandriva.com> 1.0.1-2mdv2011.0
++ Revision: 612450
+- the mass rebuild of 2010.1 packages
+
+* Sat Feb 20 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 1.0.1-1mdv2010.1
++ Revision: 508802
+- update to new version 1.0.1
+- spec file clean
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.0-4mdv2010.0
++ Revision: 429634
+- rebuild
+- rebuild early 2009.0 package (before pixel changes)
+
+* Tue May 20 2008 Anssi Hannula <anssi@mandriva.org> 1.0-2mdv2009.0
++ Revision: 209248
+- buildrequires java-rpmbuild
+- replace duplicate files with symlinks
+- provide jl.jar symlink
+
+* Sun Dec 16 2007 Nicolas Lécureuil <nlecureuil@mandriva.com> 1.0-1mdv2008.1
++ Revision: 120781
+- import jlayer
+
+
