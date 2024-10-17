@@ -4,7 +4,7 @@ Version:	1.0.1
 Release:	4
 License:	LGPLv2+
 Group:		Development/Java
-URL:		http://sourceforge.net/projects/javalayer/
+URL:		https://sourceforge.net/projects/javalayer/
 Source0:	http://www.javazoom.net/javalayer/sources/%{name}%{version}.tar.gz
 BuildRequires:	ant
 BuildRequires:	java-rpmbuild
